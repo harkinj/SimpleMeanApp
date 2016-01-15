@@ -35,6 +35,7 @@ router.get('/:id', function(req, res) {
 
 router.put('/:id', function(req, res){
     var collection = db.get('videos');
+	console.log('hi john');
     collection.update({
         _id: req.params.id
     },
